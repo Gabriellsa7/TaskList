@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto auto;
+}
+
+input {
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 1em;
+}
+
+.add {
+    width: 20%;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 2.5em;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    height: 4.3em;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 1em;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item.clicado {
+    background: #D4F6D9;
+}
+
+.item.clicado .item-name {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-icone {
+    flex: 20%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.item-name {
+    flex: 55%;
+    font-size: 1em;
+    font-weight: bold;
+}
+.item-button {
+    flex: 25%;
+}
+
+.deletar {
+    display: flex;
+    background: red;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10%;
+    padding: 0.7em;
+    height: 5em;
+    width: 100%;
+}
+
+.deletar:hover {
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.616);
+}
+/* Arrumar classe abaixo */
+.check-circle {
+    background-color: green;
+    border-radius: 50%;
+}
